@@ -1,0 +1,74 @@
+.App {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+.images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+span{
+  font-size: 70px;
+}
+
+img{
+  display: inline;
+  width: 100px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.chat-box {  
+  border: 1px solid #ccc;
+  height: 300px;
+  width: 80vw;
+  height: 70vh;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.chat-message {
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 90%;
+  display: flex; /* Ensure child elements are positioned correctly */
+}
+
+.texte {
+  display: block; /* Ensure it's a block-level element */
+  text-align: start;
+  background-color: #575353;
+  width: 100%; /* Full width of the parent */
+  padding: 0 5px 4px 5px; /* Adjust padding as needed */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box; /* Include padding in the width */
+}
+

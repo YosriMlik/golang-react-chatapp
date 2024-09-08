@@ -1,0 +1,12 @@
+root = "." 
+tmp_dir = "tmp"
+
+[build]
+  bin = "main"
+  cmd = "go run main.go"
+  exclude = ["tmp/*"]
+  include = ["**/*.go"]
+  ignore = ["tmp/*"]
+
+[log]
+  level = "info"
