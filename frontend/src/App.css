@@ -71,4 +71,15 @@ button {
   border-bottom-right-radius: 5px;
   box-sizing: border-box; /* Include padding in the width */
 }
+g, path {
+  fill: #f5f5f5; /* Light color for dark background */
+}
 
+@media (prefers-color-scheme: light) {
+  g, path {
+    fill: #000000; /* Dark color for light background */
+  }
+  .texte {
+    background-color: #f9f9f9;
+  }
+}

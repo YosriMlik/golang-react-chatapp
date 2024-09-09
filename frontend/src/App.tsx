@@ -78,7 +78,6 @@ function App() {
                     strokeLinecap: 'butt',
                     strokeLinejoin: 'miter',
                     strokeMiterlimit: '10',
-                    fill: 'none',
                     fillRule: 'nonzero',
                     opacity: '1',
                   }}
@@ -93,7 +92,6 @@ function App() {
                       strokeLinecap: 'butt',
                       strokeLinejoin: 'miter',
                       strokeMiterlimit: '10',
-                      fill: 'white',
                       fillRule: 'nonzero',
                       opacity: '1',
                     }}
@@ -109,7 +107,6 @@ function App() {
                       strokeLinecap: 'butt',
                       strokeLinejoin: 'miter',
                       strokeMiterlimit: '10',
-                      fill: 'white',
                       fillRule: 'nonzero',
                       opacity: '1',
                     }}
