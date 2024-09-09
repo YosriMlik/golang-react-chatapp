@@ -14,19 +14,21 @@ function App() {
   const socket = useRef<WebSocket | null>(null);
 
   useEffect(() => {
-    // Open WebSocket connection
-    socket.current = new WebSocket("ws://localhost:4000/ws");
-
+    // Use 'wss' for secure connections when in production
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+    socket.current = new WebSocket(`${wsProtocol}://golang-react-chatapp.onrender.com/ws`);
+  
     // Handle incoming messages
     socket.current.onmessage = (event: MessageEvent) => {
       setMessages((prevMessages) => [...prevMessages, { content: event.data }]);
-    };
-
+    };    
+  
     // Cleanup on unmount
     return () => {
       socket.current?.close();
     };
   }, []);
+  
 
   const sendMessage = () => {
     if (input && socket.current) {
