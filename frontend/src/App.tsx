@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     // Use 'wss' for secure connections when in production
     const wsProtocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
-    socket.current = new WebSocket(`${wsProtocol}://www.golang-react-chatapp.onrender.com/ws`);
+    socket.current = new WebSocket(`${wsProtocol}://golang-react-chatapp.onrender.com/ws`);
   
     // Handle incoming messages
     socket.current.onmessage = (event: MessageEvent) => {
